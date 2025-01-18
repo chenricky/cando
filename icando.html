@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我好會</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #clickButton {
+            font-size: 1.5em;
+            padding: 10px 20px;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="clickButton">我好會</button>
+    <div id="response">受不了</div>
+
+    <script>
+        document.getElementById('clickButton').addEventListener('click', function() {
+            document.getElementById('response').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
